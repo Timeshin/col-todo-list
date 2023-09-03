@@ -11,12 +11,15 @@ export default ({ mode }) => {
 			alias: {
 				'@/styles': path.resolve(__dirname, './src/styles/'),
 				'@/types': path.resolve(__dirname, './src/types/'),
-				'@/mobx': path.resolve(__dirname, './src/stores/'),
-				'@/config': path.resolve(__dirname, './src/config/'),
-				'@/services': path.resolve(__dirname, './src/services/'),
+				'@/mobx': path.resolve(__dirname, './src/domain/stores/index'),
+				'@/services': path.resolve(__dirname, './src/domain/services/'),
+				'@/interfaces': path.resolve(__dirname, './src/domain/interfaces/'),
+				'@/entities': path.resolve(__dirname, './src/domain/entities/'),
+				'@/configs': path.resolve(__dirname, './src/configs/'),
 				'@/utils': path.resolve(__dirname, './src/utils/'),
-				'@/components': path.resolve(__dirname, './src/components/'),
-				'@/layouts': path.resolve(__dirname, './src/layouts/')
+				'@/components': path.resolve(__dirname, './src/presentation/components/'),
+				'@/layouts': path.resolve(__dirname, './src/presentation/layouts/'),
+				'@/adapters': path.resolve(__dirname, './src/adapters/')
 			}
 		},
 		plugins: [react()],

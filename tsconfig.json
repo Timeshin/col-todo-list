@@ -6,12 +6,14 @@
     "paths": {
       "@/styles/*": ["styles/*"],
       "@/types/*": ["types/*"],
-      "@/stores": ["stores/index"],
-      "@/config/*": ["config/*"],
-      "@/services/*": ["services/*"],
-      "@/utils/*": ["utils/*"],
+      "@/mobx": ["domain/stores/index"],
+      "@/configs/*": ["configs/*"],
+      "@/services/*": ["domain/services/*"],
+      "@/interfaces/*": ["domain/interfaces/*"],
+      "@/entities/*": ["domain/entities/*"],
       "@/components": ["presntation/components/index"],
-      "@/layouts": ["presntation/layouts/index"]
+      "@/layouts": ["presntation/layouts/index"],
+      "@/adapters/*": ["adapters/*"]
     },
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": false,
