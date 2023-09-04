@@ -1,13 +1,10 @@
-import { useState } from 'react'
+import { MainLayout } from '@/layouts'
+import { Column } from '@/components'
 
-const App = () => {
-	const [count, setCount] = useState(0)
-
-	return (
-		<>
-			<p className='read-the-docs'>Click on the Vite and React logos to learn more</p>
-		</>
-	)
-}
+const App = () => (
+	<MainLayout>
+		<Column />
+	</MainLayout>
+)
 
 export default App

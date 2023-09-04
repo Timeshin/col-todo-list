@@ -1,8 +1,8 @@
 import axios from 'axios'
 
 export const defaultApiParams = {
-	size: 5,
-	page: 1
+	_limit: 10,
+	_page: 1
 }
 
 const fetchInstance = axios.create({

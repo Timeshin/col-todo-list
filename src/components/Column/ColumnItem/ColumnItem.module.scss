@@ -1,0 +1,78 @@
+@import '@/styles/_variables.scss';
+
+.wrapper {
+	padding: 4px;
+	background: #f4f8ff;
+	border-radius: 7px;
+
+	.card {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 8px;
+		width: 255px;
+		height: 160px;
+		box-shadow:
+			0px 1px 2px 0px #d0daeb,
+			0px 0px 2px 0px #eef4fe;
+
+		padding: 10px;
+		background: #fff;
+		border-radius: 7px;
+		.header {
+			cursor: pointer;
+
+			.checkbox {
+				cursor: pointer;
+				float: left;
+				margin-right: 8px;
+				transform: scale(1.2);
+				margin-top: 3px;
+			}
+
+			.title {
+				margin: 0;
+				color: $primary-blue;
+				font-size: 14px;
+				font-weight: 600;
+				line-height: 18px;
+			}
+
+			.completed {
+				text-decoration: line-through;
+			}
+		}
+
+		.content {
+			display: flex;
+			flex-direction: column;
+			gap: 8px;
+
+			.dates {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				font-size: 13px;
+				font-weight: 600;
+				color: $secondary-green;
+			}
+
+			.footer {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-top: 3px;
+				gap: 6px;
+
+				.tags {
+					display: flex;
+					align-items: center;
+					gap: 8px;
+				}
+
+				.avatar {
+				}
+			}
+		}
+	}
+}

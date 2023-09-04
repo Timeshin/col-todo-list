@@ -1,0 +1,17 @@
+.header {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	height: 100px;
+	width: 100%;
+	padding: 18px;
+
+	img {
+		object-fit: cover;
+	}
+}
+
+.content {
+	width: fit-content;
+	margin: 50px auto 0;
+}

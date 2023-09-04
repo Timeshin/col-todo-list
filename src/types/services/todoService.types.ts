@@ -1,4 +1,4 @@
-import { ITodo } from '@/types/domain/stores/todoStore.types'
+import { ITodo } from '@/types/stores/todoStore.types'
 
 export type TodoFromApi = Omit<ITodo, 'avatar' | 'startDate' | 'endDate' | 'description'>
 

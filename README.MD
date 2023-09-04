@@ -1,7 +1,5 @@
 ## About project
 
-Architecture: Clean architecture
-
 Technologies: React, TypeScript, MobX.
 
 ## Installation

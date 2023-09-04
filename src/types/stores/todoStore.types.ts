@@ -1,5 +1,3 @@
-import { Todo } from '@/entities/Todo'
-
 export interface ITodo {
 	id: Id
 	userId: Id
@@ -8,7 +6,7 @@ export interface ITodo {
 	description: string
 	startDate: string
 	endDate: string
-	complete: boolean
+	completed: boolean
 }
 
 export interface ITodoState {
@@ -17,8 +15,9 @@ export interface ITodoState {
 }
 
 export interface ITodoActions {
-	setTodos: (todos: Todo[]) => void
-	addTodos: (todos: Todo[]) => void
+	setTodos: (todos: ITodo[]) => void
+	addTodos: (todos: ITodo[]) => void
+	toggleTodoComplete: (id: number) => void
 	setPage: (page: number) => void
 	getNextPageTodos: (page: number) => Promise<void>
 	getTodos: () => Promise<void>

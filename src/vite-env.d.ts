@@ -9,4 +9,3 @@ interface ImportMeta {
 }
 
 declare module '*.scss'
-declare module '*.svg'
