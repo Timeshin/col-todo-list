@@ -21,10 +21,10 @@ const ColumnList = () => {
 	}, [getTodos])
 
 	useEffect(() => {
-		if (!inView || isTodosLoading || isNextTodosLoading) return
+		if (!inView || isTodosLoading || isNextTodosLoading || todoStore.todos.length === 200) return
 
 		getNextPageTodos()
-	}, [getNextPageTodos, inView, isNextTodosLoading, isTodosLoading])
+	}, [getNextPageTodos, inView, isNextTodosLoading, isTodosLoading, todoStore.todos])
 
 	return (
 		<div className={classes.container}>
@@ -33,7 +33,7 @@ const ColumnList = () => {
 					<ColumnItem key={todo.id} todo={todo} />
 				))}
 			</div>
-			{!isTodosError && !isNextTodosError && <div ref={ref} />}
+			{!isTodosError && !isNextTodosError && !isTodosLoading && !isNextTodosLoading && <div ref={ref} />}
 			{(isTodosError || isNextTodosError) && <h3>Error</h3>}
 			{(isTodosLoading || isNextTodosLoading) && <h3>Loading...</h3>}
 		</div>
