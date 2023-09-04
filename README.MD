@@ -36,6 +36,3 @@ npm run start:dev
 ```
 docker-compose up
 ```
-
-## Presentation
-
