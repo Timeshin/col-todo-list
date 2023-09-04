@@ -1,5 +1,7 @@
 ## About project
 
+Link: https://col-todo-list.vercel.app
+
 Technologies: React, TypeScript, MobX.
 
 ## Installation
